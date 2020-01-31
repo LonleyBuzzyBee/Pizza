@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _Pizza_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _This website was made to help customers order their pizza, and find out the price. Latest update 01/31/2020_
 
 #### By _**Mailie A. Cook**_
 
@@ -9,11 +9,11 @@
 
 ![Landing Page Preview](url-for-img)
 
-**[View Live Preview]({this-repo}/)**
+**[View Live Preview]({https://github.com/LonleyBuzzyBee/Pizza}/)**
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Pizza was created to help the customer choose what kind of pizza they want, and then find out how much their order costs. The customer chooses which option for their order on the form they want, then outputs the price of the order._
 
 ## Project Specifications
 
@@ -25,24 +25,13 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Setup/Installation Requirements
 
-_In Terminal:_
-
-* Navigate to where you want this application to be saved, i.e.:
-```cd desktop```
-* Clone the file from GitHub with HTTPS
-```git clone ```
-* Open file in your preferred text editor
-* On Mac: ```open -a {your text editor} pizza```
-* On Windows: ```pizza```
-
-_To Download Manually:_
-
-* Navigate to https://github.com/kwicz/beep-boop.
-* Click green "Clone or Download" button.
-* Click "Download ZIP".
-* Click downloaded file to unzip.
-* Open folder called "beep-boop-master".
-* Right click "index.html" and select your preferred browser or text editor.
+* _Accessing this website is simple, just open https://github.com/LonleyBuzzyBee/Pizza in your preferred browser._
+* _Click the 'clone or download' button in the github page._
+* _Then go to your terminal, enter 'cd desktop'. Then enter 'git clone' and paste the repo link provided in github pages._
+* _Then open the folder 'pizza' in VS code or atom._
+* _Drag the 'index.html' file to your browser or enter 'open index.html' in VS code. Then you're done!_
+* _also, you can open it easily in your browser by clicking the HTML link in gh-pages_
+---
 
 ## Known Bugs
 
@@ -50,12 +39,19 @@ _No known bugs at this time._
 
 ## Support and contact details
 
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/kwicz/{repo-name}/issues) here on GitHub._
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/LonleyBuzzyBee/Pizza/issues{repo-name}/issues) here on GitHub._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* Bootstrap v3.3.7
+* CSS
+* Jquery-3-4-1
+* Javascript
+* Atom
+* Git Bash
+* HTML
 
 ### License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+#### Copyright (c) 2020 Mai A. Cook
