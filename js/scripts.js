@@ -7,9 +7,9 @@ function Pizza(pSize,pToppings,regPizza) {
 }
 
 Pizza.prototype.pizzaCalc = function() {
-  var price = addedFees();
-  return this.cost + price;
-  consol.log(pizzaCalc);
+  // var price = addedFees();
+  // return this.cost + price;
+  // consol.log(pizzaCalc);
 }
 
 function checkStartPrice(pizza) {
@@ -39,8 +39,12 @@ function addedFees(pizza) {
   // pizza.prototype.pizzaCalc = function() {
 
 
-  var order = ""
+
   //user logic
+  var finalCost = new FinalCost();
+  function displayCost
+  var order = ""
+
   $(document).ready(function() {
     $("form").submit(function(event) {
       event.preventDefault();
@@ -48,7 +52,7 @@ function addedFees(pizza) {
       var pizzaToppings = $(".toppings").val();
       var regPizza = $(".regular-pizzas").val();
       var pizza = new Pizza(size, topping, regular);
-      var fPrice = order.pizzaCalc();
+      // var fPrice = order.pizzaCalc();
       $("#cost").text(fPrice);
       checkStartPrice(pizza);
     });
