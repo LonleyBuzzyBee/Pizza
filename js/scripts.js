@@ -46,9 +46,11 @@
   }
 }
 function printTotal(pizza) {
-    console.log(pizza);
-    $("#cost").text();
-    $("#totalCost").html();
+  pizza.startCost();
+  pizza.addMeat();
+  pizza.addVeggie();
+  pizza.addCheese();
+  $("#totalCost").html(pizza.cost);
 }
     //user logic
     $(document).ready(function() {
@@ -59,9 +61,6 @@ function printTotal(pizza) {
         var vegetableTopping = $(".vegetable-topping").val();
         var cheeses = $(".cheeses").val();
         var pizza = new Pizza(pizzaSize, meatTopping, vegetableTopping, cheeses);
-        pizza.startCost();
-        pizza.addMeat();
-        pizza.addVeggie();
-        pizza.addCheese();
+        printTotal(pizza);
       });
     });
