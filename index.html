@@ -8,66 +8,63 @@
   <title>zaaaa</title>
 </head>
 <body>
-  <div class="container-">
-    <div class="jumbotron">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
       <h1>Pizza Parlor</h1>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h2>Customize your pizza!</h2>
-            <form>
-
-              <div class="form-group">
-                <select class="form-control pizza-size">
-                  <option selected="selected">Select a pizza size</option>
-                  <option value="smallPizza">Small 10"</option>
-                  <option value="mediumPizza">Medium 14"</option>
-                  <option value="largePizza">Large 17"</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <select class="form-control meat-topping">
-                  <option selected="selected">Select a meat topping</option>
-                  <option value="meat1">Pepperoni</option>
-                  <option value="meat2">Sausage</option>
-                  <option value="meat3">Vegan Peperoni</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <select class="form-control vegetable-topping">
-                  <option selected="selected">Select a vegtable topping</option>
-                  <option value="veggie1">onions</option>
-                  <option value="veggie2">spinache</option>
-                  <option value="veggie3">olives</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <select class="form-control cheeses">
-                  <option selected="selected">Select a type of cheese</option>
-                  <option value="cheese1">Mozzarella</option>
-                  <option value="cheese2">Cheddar</option>
-                  <option value="cheese3">feta</option>
-                </select>
-              </div>
-
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
+  </div>
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <h2>Customize your pizza!</h2>
+        <form>
+          <div class="form-group">
+            <select class="form-control pizza-size">
+              <option selected="selected">Select a pizza size</option>
+              <option value="smallPizza">Small 10"</option>
+              <option value="mediumPizza">Medium 14"</option>
+              <option value="largePizza">Large 17"</option>
+            </select>
           </div>
-        </div>
-      </div>
-      <div class="col-md-6" id="cost">
-        <div class="card">
-          <div class="card-body">
-            <h2>Your total:</h2>
-            <p id="totalCost">
-            </p>
+
+          <div class="form-group">
+            <select class="form-control meat-topping">
+              <option selected="selected">Select a meat topping</option>
+              <option value="meat1">Pepperoni</option>
+              <option value="meat2">Sausage</option>
+              <option value="meat3">Vegan Pepperoni</option>
+            </select>
           </div>
-        </div>
+
+          <div class="form-group">
+            <select class="form-control vegetable-topping">
+              <option selected="selected">Select a vegtable topping</option>
+              <option value="veggie1">Onions</option>
+              <option value="veggie2">Spinach</option>
+              <option value="veggie3">Olives</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select class="form-control cheeses">
+              <option selected="selected">Select a type of cheese</option>
+              <option value="cheese1">Mozzarella</option>
+              <option value="cheese2">Cheddar</option>
+              <option value="cheese3">Feta</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
       </div>
-    </body>
-    </html>
+    </div>
+    <div class="card card-total">
+      <div class="card-body">
+        <h2>Your total:</h2>
+        <p class="lead" id="totalCost">
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
