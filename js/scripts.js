@@ -10,51 +10,51 @@
   }
 
   Pizza.prototype.startCost = function() {
-      if (pizza.pSize === "smallPizza"){
-        pizza.cost = 9
-      } if (pizza.pSize === "mediumPizza"){
-        pizza.cost = 12
-      } if (pizza.pSize === "largePizza"){
-        pizza.cost = 16
+      if (this.pSize === "smallPizza"){
+        this.cost = 9
+      } if (this.pSize === "mediumPizza"){
+        this.cost = 12
+      } if (this.pSize === "largePizza"){
+        this.cost = 16
   }
 }
   Pizza.prototype.addMeat = function() {
-    if (pizza.mTopping === "meat1"){
-      pizza.cost += 2
-    } if (pizza.mTopping === "meat2"){
-      pizza.cost += 1
-    } if (pizza.mTopping === "meat3"){
-      pizza.cost += 3
+    if (this.mTopping === "meat1"){
+      this.cost += 2
+    } if (this.mTopping === "meat2"){
+      this.cost += 1
+    } if (this.mTopping === "meat3"){
+      this.cost += 3
   }
 }
   Pizza.prototype.addVeggie = function() {
-    if (pizza.vTopping === "veggie1"){
-      pizza.cost += 3
-    } if (pizza.vTopping === "veggie2"){
-      pizza.cost += 2
-    } if (pizza.vTopping === "veggie3"){
-      pizza.cost += 1
+    if (this.vTopping === "veggie1"){
+      this.cost += 3
+    } if (this.vTopping === "veggie2"){
+      this.cost += 2
+    } if (this.vTopping === "veggie3"){
+      this.cost += 1
   }
 }
   Pizza.prototype.addCheese = function() {
-    if (pizza.cheeseTopping=== "cheese1"){
-      pizza.cost += 1
-    } if (pizza.cheeseTopping === "cheese2"){
-      pizza.cost += 2
-    } if (pizza.vTopping === "cheese3"){
-      pizza.cost += 2
+    if (this.cheeseTopping=== "cheese1"){
+      this.cost += 1
+    } if (this.cheeseTopping === "cheese2"){
+      this.cost += 2
+    } if (this.vTopping === "cheese3"){
+      this.cost += 2
   }
 }
-Pizza.prototype.addTotals = function() {
-  var
+// Pizza.prototype.addTotals = function() {
+//   var addedTotal = this.pSize +
+
+
+
+function printTotal(pizza) {
+    console.log(pizza);
+    $("#cost").text();
+    $("#totalCost").html();
 }
-
-
-// function printTotal() {
-// var pizzaF = Pizza();
-//     $("#cost").text();
-//     $("#totalCost").html(pizzaF.cost);
-// }
 
 
     //user logic
@@ -67,6 +67,10 @@ Pizza.prototype.addTotals = function() {
         var vegetableTopping = $("vegetable-topping").val();
         var cheeses = $("cheese").val();
         var pizza = new Pizza(pizzaSize, meatTopping, vegetableTopping, cheeses);
+        pizza.startCost();
+        pizza.addMeat();
+        pizza.addVeggie();
+        pizza.addCheese();
         // $("#cost").text();
         printTotal(pizza);
         // printTotal(piz;
