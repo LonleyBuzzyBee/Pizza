@@ -13,7 +13,5 @@ body {
 .card {
   box-shadow: 5px 10px 10px #984ebf;
   background-color: #ccddff;
-}
-.card-total {
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
