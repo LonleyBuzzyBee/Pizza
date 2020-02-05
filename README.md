@@ -5,7 +5,7 @@
 #### By _**Mailie A. Cook**_
 
 
-**[View Live Preview]({https://github.com/LonleyBuzzyBee/Pizza}/)**
+**[View Live Preview]({https://lonleybuzzybee.github.io/Pizza/}/)**
 
 ## Description
 
@@ -27,7 +27,7 @@ _Pizza was created to help the customer choose what kind of pizza they want, and
 * _Then go to your terminal, enter 'cd desktop'. Then enter 'git clone' and paste the repo link provided in github pages._
 * _Then open the folder 'pizza' in VS code or atom._
 * _Drag the 'index.html' file to your browser or enter 'open index.html' in VS code. Then you're done!_
-* _also, you can open it easily in your browser by clicking the HTML link in gh-pages_
+* _also, you can open it easily in your browser by clicking the HTML link in gh-pages https://lonleybuzzybee.github.io/Pizza/_
 ---
 
 ## Known Bugs
