@@ -18,41 +18,43 @@
           <div class="card-body">
             <h2>Customize your pizza!</h2>
             <form>
+
               <div class="form-group">
                 <select class="form-control" class="pizza-size">
                   <option selected="selected">Select a pizza size</option>
                   <option value="smallPizza">Small 10"</option>
                   <option value="mediumPizza">Medium 14"</option>
                   <option value="largePizza">Large 17"</option>
-                  <option value="none">None</option>
                 </select>
               </div>
+
               <div class="form-group">
-                <select class="form-control" class="toppings">
-                  <option selected="selected">Select your toppings</option>
-                  <option value="meat">Pepperoni</option>
-                  <option value="meat">Sausage</option>
-                  <option value="meat">Vegan Peperoni</option>
-                  <option value="meat">Soy Curds</option>
-                  <option value="veggie">Onion</option>
-                  <option value="veggie">Spinach</option>
-                  <option value="cheese">Mozzarella</option>
-                  <option value="cheese">Vegan Mozzarella</option>
-                  <option value="cheese">Feta</option>
-                  <option value="cheese">Vegan feta</option>
-                  <option value="none">None</option>
+                <select class="form-control" class="meat-topping">
+                  <option selected="selected">Select a meat topping</option>
+                  <option value="meat1">Pepperoni</option>
+                  <option value="meat2">Sausage</option>
+                  <option value="meat3">Vegan Peperoni</option>
                 </select>
               </div>
+
               <div class="form-group">
-                <select class="form-control" class="regular-pizzas">
-                  <option selected="selected">Don't want a custom pizza? Select a classic</option>
-                  <option value="classic">Hawaiian</option>
-                  <option value="classic">Classic pepperoni</option>
-                  <option value="classic">Spinach and feta</option>
-                  <option value="classic">Vegan version of any classic</option>
-                  <option value="none">Nah ill just stick with custom</option>
+                <select class="form-control" class="vegtable-topping">
+                  <option selected="selected">Select a vegtable topping</option>
+                  <option value="veggie1">onions</option>
+                  <option value="veggie2">spinache</option>
+                  <option value="veggie3">olives</option>
                 </select>
               </div>
+
+              <div class="form-group">
+                <select class="form-control" class="cheeses">
+                  <option selected="selected">Select a type of cheese</option>
+                  <option value="cheese1">Mozzarella</option>
+                  <option value="cheese2">Cheddar</option>
+                  <option value="cheese3">feta</option>
+                </select>
+              </div>
+
               <button type="submit" class="btn btn-default">Submit</button>
             </form>
           </div>

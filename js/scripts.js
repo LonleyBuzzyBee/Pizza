@@ -1,51 +1,60 @@
-// //business logic
-// function Pizza(pSize,pToppings,regPizza) {
-//   this.pSize = pSize,
-//   this.pToppings = pToppings,
-//   this.regPizza = regPizza,
-//   this.cost = 0
-// }
-//
-//
-//
-//   //user logic
-// var newOrder = new PizzaOrder();
-//
-// function displayCost(pizzaOrderToDisplay) {
-//   var orderDisplay = $("p#totalCost").val();
-//   var orderHtml = "";
-//
-//
-// }
-//
-//   $(document).ready(function() {
-//     $("form").submit(function(event) {
-//       event.preventDefault();
-//       var pizzaSize = $(".pizza-size").val();
-//       var pizzaToppings = $(".toppings").val();
-//       var regPizza = $(".regular-pizzas").val();
-//       var pizza = new Pizza(size, topping, regular);
-//       pizza
-//     });
-//   });
-//
-
-
 
 
   //business logic
-  function Pizza(pSize,pToppings,regPizza) {
+  function Pizza(pSize,mTopping,vTopping,cheeseTopping) {
     this.pSize = pSize,
-    this.pToppings = pToppings,
-    this.regPizza = regPizza,
+    this.mTopping = mTopping,
+    this.vTopping = vTopping,
+    this.cheeseTopping = cheeseTopping,
     this.cost = 0
   }
 
-  Pizza.prototype.pizzaCalc = function() {
-
+  Pizza.prototype.startCost = function() {
+      if (pizza.pSize === "smallPizza"){
+        pizza.cost = 9
+      } if (pizza.pSize === "mediumPizza"){
+        pizza.cost = 12
+      } if (pizza.pSize === "largePizza"){
+        pizza.cost = 16
   }
+}
+  Pizza.prototype.addMeat = function() {
+    if (pizza.mTopping === "meat1"){
+      pizza.cost += 2
+    } if (pizza.mTopping === "meat2"){
+      pizza.cost += 1
+    } if (pizza.mTopping === "meat3"){
+      pizza.cost += 3
+  }
+}
+  Pizza.prototype.addVeggie = function() {
+    if (pizza.vTopping === "veggie1"){
+      pizza.cost += 3
+    } if (pizza.vTopping === "veggie2"){
+      pizza.cost += 2
+    } if (pizza.vTopping === "veggie3"){
+      pizza.cost += 1
+  }
+}
+  Pizza.prototype.addCheese = function() {
+    if (pizza.cheeseTopping=== "cheese1"){
+      pizza.cost += 1
+    } if (pizza.cheeseTopping === "cheese2"){
+      pizza.cost += 2
+    } if (pizza.vTopping === "cheese3"){
+      pizza.cost += 2
+  }
+}
+Pizza.prototype.addTotals = function() {
+  var
+}
 
 
+// function printTotal() {
+// var pizzaF = Pizza();
+//     $("#cost").text();
+//     $("#totalCost").html(pizzaF.cost);
+// }
 
 
     //user logic
@@ -54,11 +63,13 @@
       $("form").submit(function(event) {
         event.preventDefault();
         var pizzaSize = $(".pizza-size").val();
-        var pizzaToppings = $(".toppings").val();
-        var regPizza = $(".regular-pizzas").val();
-        var pizza = new Pizza(size, topping, regular);
-        $("#cost").text(fPrice);
-        checkStartPrice(pizza);
+        var meatTopping = $("meat-topping").val();
+        var vegetableTopping = $("vegetable-topping").val();
+        var cheeses = $("cheese").val();
+        var pizza = new Pizza(pizzaSize, meatTopping, vegetableTopping, cheeses);
+        // $("#cost").text();
+        printTotal(pizza);
+        // printTotal(piz;
       });
     });
 
