@@ -19,9 +19,9 @@ _Pizza was created to help the customer choose what kind of pizza they want, and
 
 | Behavior | Input | Output |
 |---|---|---|
-|   |   |   |
-|   |   |   |
-|   |   |   |
+| the user selects which pizza size option they want in the form and it sets the base price| smallPizza | 9 |
+| the user selects a meat topping and the value adds to the base price| meat1 | 11 |
+| the user selects a vegetable topping and the value adds to the base price | veggie1 | 12 |
 
 ## Setup/Installation Requirements
 
@@ -43,7 +43,7 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 
 ## Technologies Used
 
-* Bootstrap v3.3.7
+* Bootstrap v4.4.1
 * CSS
 * Jquery-3-4-1
 * Javascript
