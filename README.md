@@ -5,10 +5,6 @@
 #### By _**Mailie A. Cook**_
 
 
-## Preview
-
-![Landing Page Preview](url-for-img)
-
 **[View Live Preview]({https://github.com/LonleyBuzzyBee/Pizza}/)**
 
 ## Description
@@ -19,9 +15,10 @@ _Pizza was created to help the customer choose what kind of pizza they want, and
 
 | Behavior | Input | Output |
 |---|---|---|
-| the user selects which pizza size option they want in the form and it sets the base price| smallPizza | 9 |
-| the user selects a meat topping and the value adds to the base price| meat1 | 11 |
-| the user selects a vegetable topping and the value adds to the base price | veggie1 | 12 |
+|the program takes a selected value for pizza size and sets the base price| smallPizza | 9 |
+| then it takes a selected meat topping and adds the value to the base price| meat1 | 11 |
+| then it takes a selected vegetable topping and adds the value to the base price | veggie1 | 12 |
+| then all these properties are applied, to total into the total cost | smallPizza,meat1,veggie1 | 14 |
 
 ## Setup/Installation Requirements
 
